@@ -1,4 +1,14 @@
 # firstgram
 football app
 
-# END
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Моя тема</title>
+</head>
+<body>
+  <h1>Моя тема: футбол</h1>
+  <p>Тут буде моя гра.</p>
+</body>
+</html>
