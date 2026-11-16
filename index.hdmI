@@ -1,11 +1,187 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Моя тема</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Візитка річного навчального проєкту учня 10 класу на тему футболу.">
+    <title>Футбол — мій річний проєкт</title>
+
+    <style>
+        :root {
+            --primary: #14532D;
+            --secondary: #F5F5F0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--secondary);
+            color: var(--primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 25px 8%;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        header p {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        main {
+            width: 84%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 65px 0;
+        }
+
+        .intro {
+            margin-bottom: 45px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 76px);
+            margin-bottom: 20px;
+            letter-spacing: -3px;
+        }
+
+        .description {
+            max-width: 650px;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        h2 {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .card {
+            border: 1px solid var(--primary);
+            padding: 28px;
+            min-height: 150px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .card:hover {
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+
+        .card span {
+            display: block;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            border-top: 1px solid var(--primary);
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                width: 90%;
+                padding: 45px 0;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Моя тема: футбол</h1>
-  <p>Тут буде моя гра.</p>
+
+    <header>
+        <p>НАВЧАЛЬНИЙ ПРОЄКТ · 10 КЛАС</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>ФУТБОЛ.</h1>
+
+            <p class="description">
+                Футбол — командна спортивна гра, у якій дві команди
+                змагаються за перемогу, забиваючи м'яч у ворота суперника.
+                Цей проєкт присвячений вивченню футболу, його правил,
+                особливостей та значення у світі спорту.
+            </p>
+        </section>
+
+        <section>
+            <h2>Про мій проєкт</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <span>⚽</span>
+                    <h3>Гра</h3>
+                    <p>Знайомство з футболом, його правилами та особливостями.</p>
+                </article>
+
+                <article class="card">
+                    <span>📚</span>
+                    <h3>Історія</h3>
+                    <p>Дослідження виникнення та розвитку футболу.</p>
+                </article>
+
+                <article class="card">
+                    <span>🏆</span>
+                    <h3>Легенди</h3>
+                    <p>Вивчення відомих футболістів і футбольних досягнень.</p>
+                </article>
+
+                <article class="card">
+                    <span>💻</span>
+                    <h3>Вебсайт</h3>
+                    <p>Створення інформаційного сайту про світ футболу.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Річний навчальний проєкт · Тема «Футбол»
+    </footer>
+
 </body>
 </html>
+
